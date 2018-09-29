@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pengq.common.mapper.dao.UserDao;
-import tk.mybatis.spring.annotation.MapperScan;
+import pengq.common.mapper.annotation.MapperScan;
 /**
  * FileName:     BaseRepository
  *

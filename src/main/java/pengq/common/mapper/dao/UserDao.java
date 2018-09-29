@@ -1,6 +1,7 @@
 package pengq.common.mapper.dao;
 
 import org.springframework.stereotype.Repository;
+import pengq.common.mapper.common.BaseRepository;
 import pengq.common.mapper.entity.User;
 import tk.mybatis.mapper.common.Mapper;
 
@@ -16,5 +17,5 @@ import tk.mybatis.mapper.common.Mapper;
  * @author: pengq
  */
 @Repository
-public interface UserDao extends Mapper<User>{
+public interface UserDao extends BaseRepository<User> {
 }
