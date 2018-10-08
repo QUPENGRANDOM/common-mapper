@@ -5,8 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pengq.common.mapper.dao.UserDao;
 import pengq.common.mapper.annotation.MapperScan;
+import pengq.common.mapper.service.UserService;
+
 /**
  * FileName:     BaseRepository
  *
@@ -24,10 +25,10 @@ public class CommonMapperStarterApplication {
 	}
 
 	@Autowired
-	UserDao userDao;
+	UserService userService;
 
 	@GetMapping(value = "/users")
 	public Object getUsers(){
-		return userDao.selectAll();
+		return userService.listUserPaging();
 	}
 }

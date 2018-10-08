@@ -5,6 +5,8 @@ import pengq.common.mapper.common.BaseRepository;
 import pengq.common.mapper.entity.User;
 import tk.mybatis.mapper.common.Mapper;
 
+import java.util.List;
+
 /**
  * FileName:     UserDao
  *
@@ -17,5 +19,7 @@ import tk.mybatis.mapper.common.Mapper;
  * @author: pengq
  */
 @Repository
-public interface UserDao extends BaseRepository<User> {
+public interface UserDao extends BaseRepository<User,Integer> {
+
+    List<User> findAllPaging();
 }
