@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import pengq.common.mapper.common.BaseRepository;
 import pengq.common.mapper.common.BaseService;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
